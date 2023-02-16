@@ -1,0 +1,27 @@
+section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 100vh;
+    background-image: url("../../assets/hero-background.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.introduction {
+    font-size: 3.5rem;
+    align-self: center;
+    justify-self: center;
+    color: white;
+    padding: 15px;
+}
+
+.illustration{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.illustration img {
+    width: 70%;
+}

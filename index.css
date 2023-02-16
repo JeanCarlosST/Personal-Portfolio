@@ -1,5 +1,16 @@
+:root {
+    --main-color: #800000;
+    --background-color: #F2F2F2;
+    --accent-color: #900404;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: 0;
+    font-family: 'Rubik', sans-serif;
+}
+
+body {
+    background-color: var(--background-color);
 }

@@ -1,0 +1,28 @@
+nav {
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: var(--background-color);
+    box-shadow: 0 -2px 15px 5px rgba(0, 0, 0, 0.5);
+    position: fixed;
+    width: 98%;
+}
+
+nav, ul {
+    display: flex;
+}
+
+ul li {
+    list-style: none;
+    padding: 0px 15px;
+}
+
+li a {
+    text-decoration: none;
+    color: black;
+}
+
+.name {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
