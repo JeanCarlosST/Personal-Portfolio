@@ -3,7 +3,7 @@ import styles from "./Navbar.module.css";
 const Navbar = () => {
     return (
         <nav>
-            <span className={styles.name}>Jean Santos</span>
+            <a href="#" className={styles.name}>Jean Santos</a>
             <ul>
                 <li>
                     <a href="#home">Home</a>
