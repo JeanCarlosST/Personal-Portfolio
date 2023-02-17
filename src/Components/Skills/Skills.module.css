@@ -1,0 +1,70 @@
+.skillsAndExperience {
+    height: 100vh;
+    padding: 20px 50px;
+    color: white;
+    background-image: url("../../assets/skills-background.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.skillsAndExperience h2 {
+    text-align: center;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.skillsContainer {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 15px;
+    margin: 15px 0;
+}
+
+.skillItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-self: start;
+}
+
+.skillIconContainer {
+    border-radius: 50%;
+}
+
+.skillIconContainer, .companyImageContainer {
+    background-color: white;
+    min-width: 80px;
+    min-height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.skillIcon {
+    max-height: 50px;
+}
+
+.skillIcon, .companyImage {
+    width: 100%;
+}
+
+.skillName {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.companiesContainer {
+    margin: 15px 0;
+    max-width: 200px;
+}
+
+.companyImageContainer {
+    border-radius: 16px;
+    padding: 0 10px;
+}

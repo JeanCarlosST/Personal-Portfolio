@@ -1,19 +1,23 @@
 import styles from "./Projects.module.css";
-import ProjectsList from "../../data/projects";
+import ProjectList from "../../data/projects";
+import tilt from "../../assets/tilt.svg";
 
 const Projects = () => {
 
-    const list = Object.values(ProjectsList);
+    const list = Object.values(ProjectList);
 
     return (
-        <section id="projects" className={styles.projects}>
-            <h2>Portfolio Projects</h2>
-            <div className={styles.projectsContainer}>
-                {list.map((project, index) => 
-                    <ProjectItem project={project} key={index}/>    
-                )}
-            </div>
-        </section>
+        <>
+            <section id="projects" className={styles.projects}>
+                <h2>Portfolio Projects</h2>
+                <div className={styles.projectsContainer}>
+                    {list.map((project, index) => 
+                        <ProjectItem project={project} key={index}/>    
+                    )}
+                </div>
+            </section>
+            <img src={tilt} className={styles.divider}/>
+        </>
     );
 }
 
