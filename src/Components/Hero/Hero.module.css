@@ -1,4 +1,4 @@
-section {
+.hero {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     height: 100vh;
@@ -24,4 +24,8 @@ section {
 
 .illustration img {
     width: 70%;
+}
+
+.divider {
+    width: 100%;
 }

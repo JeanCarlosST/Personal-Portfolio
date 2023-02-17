@@ -1,0 +1,49 @@
+.projects {
+    height: 100vh;
+    padding: 20px;
+}
+
+.projects h2 {
+    text-align: center;
+}
+
+.projectsContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    max-width: 1200px;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.projectItem {
+    background-color: white;
+    padding: 15px;
+    border-radius: 16px;
+    border: 1px solid #D8D8D8
+}
+
+.projectItem img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.projectItem h3 {
+    font-weight: 400;
+    text-align: center;
+}
+
+.projectItem img, .projectItem h3 {
+    margin-bottom: 15px;
+}
+
+.technologies {
+    display: flex;
+    justify-content: center;
+}
+
+.technology {
+    padding: 5px 10px;
+    border-radius: 20px;
+}
