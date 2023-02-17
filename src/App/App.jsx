@@ -1,3 +1,4 @@
+import Contact from '../Components/Contact/Contact';
 import Hero from '../Components/Hero/Hero';
 import Navbar from '../Components/Navbar/Navbar';
 import Projects from '../Components/Projects/Projects';
@@ -13,6 +14,7 @@ const App = () => {
         <Hero/>
         <Projects/>
         <Skills/>
+        <Contact/>
       </main>
     </>
   )

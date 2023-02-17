@@ -1,0 +1,58 @@
+.contact {
+    height: 80vh;
+    padding: 20px 50px;
+}
+
+.contact h2 {
+    text-align: center;
+}
+
+.buttonGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 25px;
+    height: 100%;
+    max-width: 700px;
+    margin: auto;
+}
+
+.contactButton {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 16px;
+    border: 2px solid transparent;
+    max-width: 300px;
+    color: white;
+    font-size: 1.2rem;
+    background-color: var(--main-color);
+    box-shadow: 5px 5px 0 0 black;
+    transition: box-shadow 0.2s, border 0.2s;
+}
+
+.contactButton:first-of-type {
+    justify-self: end;
+}
+
+.contactButton:last-of-type {
+    justify-self: start;
+}
+
+.contactButton:hover {
+    border: 2px solid black;
+    box-shadow: 0 0 0 0 black;
+}
+
+.contactButton:active {
+    background-color: var(--accent-color);
+}
+
+.contactButton img {
+    width: 20%;
+    max-width: 50px;
+    margin-right: 10px;
+}
