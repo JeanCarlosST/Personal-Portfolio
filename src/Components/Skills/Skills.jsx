@@ -19,7 +19,7 @@ const Skills = () => {
                         )}
                     </div>
                 </div>
-                <div className={styles.company}>
+                <div className={styles.companies}>
                     <span>Where I've worked: </span>
                     <div className={styles.companiesContainer}>
                         {companyList.map((company, index) => 
@@ -34,7 +34,7 @@ const Skills = () => {
 
 const SkillItem = ({skill}) => {
     return (
-        <figure className={styles.skillItem}>
+        <figure className={styles.skillItem} data-aos="zoom-in">
             <div className={styles.skillIconContainer}>
                 <img src={skill.icon} className={styles.skillIcon}/>
             </div>
@@ -45,10 +45,10 @@ const SkillItem = ({skill}) => {
 
 const CompanyItem = ({company}) => {
     return (
-        <figure className={styles.companyItem}>
-            <div className={styles.companyImageContainer}>
+        <figure className={styles.companyItem} data-aos="zoom-in">
+            <a href={company.link} target="_blank" className={styles.companyImageContainer}>
                 <img src={company.image} className={styles.companyImage}/>
-            </div>
+            </a>
         </figure>
     );
 }

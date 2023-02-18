@@ -1,6 +1,6 @@
 .contact {
-    height: 80vh;
-    padding: 20px 50px;
+    height: 60vh;
+    padding: 10vh 50px;
 }
 
 .contact h2 {
@@ -15,6 +15,25 @@
     height: 100%;
     max-width: 700px;
     margin: auto;
+}
+
+@media only screen and (max-width: 620px) {
+    .buttonGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .contactButton {
+        justify-self: center !important;
+    }
+
+    .contactButton:first-of-type {
+        align-self: end;
+    }
+    
+    .contactButton:last-of-type {
+        align-self: start;
+    }
+    
 }
 
 .contactButton {

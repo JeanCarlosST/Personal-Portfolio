@@ -3,7 +3,8 @@ import sagLogo from "../assets/sag-logo.png";
 const companies = {
     SAG: {
         name: "Soluciones Almonte Gil",
-        image: sagLogo
+        image: sagLogo,
+        link: "https://sagrd.com/"
     }
 };
 
