@@ -1,7 +1,8 @@
 .hero {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    height: 100vh;
+    padding-top: 10vh;
+    height: 90vh;
     background-image: url("../../assets/hero-background.svg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -11,7 +12,7 @@
 @media only screen and (max-width: 1000px) {
     .hero {
         grid-template-columns: 1fr;
-        grid-template-rows: repeat(2, 1fr);
+        grid-template-rows: 1fr 2fr;
         padding-top: 10vh;
         height: 90vh;
     }
@@ -19,9 +20,9 @@
     .introduction {
         font-size: 3.5rem !important;
     }
-
-    .illustration {
-        align-items: start !important;
+    
+    .illustrationContainer {
+        width: 50% !important;
     }
 } 
 
@@ -44,8 +45,8 @@
         font-size: 2.5rem !important;
     }
 
-    .illustration img {
-        width: 90% !important;
+    .illustrationContainer {
+        width: 50% !important;
     }
 }
 
@@ -61,8 +62,58 @@
     align-items: center;
 }
 
-.illustration img {
+.illustrationContainer {
     width: 70%;
+    max-width: 300px;
+    position: relative;
+}
+
+.illustrationImage {
+    width: 100%;
+}
+
+.sattelitesContainer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    animation: spin 20s linear infinite;
+}
+
+.skillSattelite {
+    object-fit: contain;
+    filter: drop-shadow(0px 0px 10px black);
+    position: absolute;
+    animation: rotateSattelite 20s linear infinite;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes rotateSattelite {
+    0% {
+        transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+    }
+    20% {
+        transform: rotateX(25deg) rotateY(-25deg) rotateZ(-72deg);
+    }
+    40% {
+        transform: rotateX(25deg) rotateY(25deg) rotateZ(-144deg);
+    }
+    60% {
+        transform: rotateX(-25deg) rotateY(-25deg) rotateZ(-216deg);
+    }
+    80% {
+        transform: rotateX(-25deg) rotateY(25deg) rotateZ(-288deg);
+    }
+    100% {
+        transform: rotateX(0deg) rotateY(0deg) rotateZ(-360deg);
+    }
 }
 
 .divider {

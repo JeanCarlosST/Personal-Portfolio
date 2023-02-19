@@ -1,5 +1,6 @@
 import styles from "./Navbar.module.css";
 import navBtnIcon from "../../assets/nav-btn-icon.svg";
+import xMarkIcon from "../../assets/x-mark-icon.svg";
 import { useRef, useState } from "react";
 
 const Navbar = () => {
@@ -20,7 +21,7 @@ const Navbar = () => {
                 <a href="#" className={styles.name}>Jean Santos</a>
             </div>
             <button type="button" className={styles.navBtn} onClick={handleMenuClick}>
-                <img src={navBtnIcon} className={styles.navBtnIcon}/>
+                <img src={isActive ? xMarkIcon : navBtnIcon} className={styles.navBtnIcon}/>
             </button>
             <nav className={isActive ? styles.active: ""} ref={navBar}>
                 <ul>
