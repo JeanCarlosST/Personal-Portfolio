@@ -99,8 +99,6 @@ const SkillSattelite = ({skill, base, pos}) => {
         marginLeft: `calc(${pos.x}px - ${offset}${unit})`
     };
 
-    console.log(skill.name, style);
-
     return (
         <img 
             src={skill.icon} 
