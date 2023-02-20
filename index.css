@@ -19,3 +19,19 @@ body {
     background-color: var(--background-color);
     overflow-x: hidden;
 }
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--background-color); 
+}
+   
+::-webkit-scrollbar-thumb {
+    background: #5c5c5c; 
+}
+  
+::-webkit-scrollbar-thumb:hover {
+    background: #474747; 
+}
