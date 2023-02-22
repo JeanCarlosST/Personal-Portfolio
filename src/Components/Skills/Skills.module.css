@@ -1,11 +1,32 @@
 .skillsAndExperience {
-    min-height: 100vh;
+    min-height: 110vh;
     padding: 10vh 50px;
     color: white;
     background-image: url("../../assets/skills-background.svg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    position: relative;
+}
+
+.skillsAndExperience::before,
+.skillsAndExperience::after {
+    content: "";
+    width: 100%;
+    height: 10vh;
+    background-color: var(--background-color);
+    left: 0;
+    position: absolute;
+}
+
+.skillsAndExperience::before {
+    top: -1px;
+    clip-path: polygon(-5% 0, 100% 0, 105% 100%);
+}
+
+.skillsAndExperience::after {
+    bottom: -1px;
+    clip-path: polygon(100% 0, -5% 100%, 100% 100%);
 }
 
 .skillsAndExperience h2 {
